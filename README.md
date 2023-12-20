@@ -36,7 +36,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-Access the admin panel by visiting [http://127.0.0.1:8000/admin/] in your web browser. Log in with the superuser credentials you created earlier.
+Access the admin panel by visiting [http://127.0.0.1:8000/admin/] in your web browser. Log in with the superuser credentials.
 
 
 3. Login:
