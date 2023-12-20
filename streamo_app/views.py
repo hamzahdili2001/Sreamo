@@ -1,7 +1,7 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from rest_framework import generics
+from .models import Video
+from .serializers import VideoSerializer
 
-
-def index(request):
-    return HttpResponse("Hello Streamo")
-
+class VideoListView(generics.ListAPIView):
+    queryset = Video.objects.all()
+    serializer_class = VideoSerializer
